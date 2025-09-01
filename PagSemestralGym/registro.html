@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="./asset/css/style.css" />
+</head>
+<body>
+      <!-- HEADER / BANNER -->
+   
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-primary" href="index.html">FitWeb</a>
+
+    <!-- Botón hamburguesa para móvil -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="planes.html">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="Entrenadores.html">Entrenadores</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tienda.html">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+      <!-- Botón de login -->
+      <a class="btn btn-outline-primary ms-3" href="inicioSesion.html">Iniciar Sesión</a>
+    </div>
+  </div>
+</header>
+
+<!--registro-->
+
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
+            <h2 class="text-center mb-4">Registrate</h2>
+            
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="usuario@correo.com" >
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="********" >
+                </div>
+
+                <!-- el <a</a> funciona mas como un enlace pero sirve como boton pero la idea es dejarlo como botton para 
+                 luego conectarlo con la bd con java, de momento lo dejo como enlace para hacer el prototipo-->
+                <div class="d-grid">
+                     <a href="index.html" class="btn btn-primary">Regístrate</a>
+                </div>
+
+
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

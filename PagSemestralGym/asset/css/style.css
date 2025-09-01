@@ -1,0 +1,90 @@
+/*Pagina contacto*/
+.titulo-planes {
+    margin-top: 50px;
+}
+
+.titulo-contacto{
+    
+    max-width: 1000%;
+    text-align: center;
+    
+}
+
+.imagen-contacto {
+    max-width: 100%; /* ancho máximo del contenedor */
+    height: auto;    /* mantiene la proporción original */
+    max-height: 900px; /* limita la altura maxima pero se achica para un lado xdd*/
+}
+
+.imagen-portada{
+    max-width: 1000%;
+    text-align: center;
+
+}
+
+
+/*Pagina Tienda*/
+.baner_tienda{
+    max-width: 100%; 
+    height: auto;    
+    max-height: 900px;
+}
+
+/* Asegúrate de que los enlaces no tengan área adicional alrededor */
+.link-clickeable {
+    display: inline-block; /* hace que el enlace solo ocupe el espacio de la imagen */
+    text-decoration: none; /* elimina el subrayado del enlace */
+}
+
+/* Las imágenes también deben estar alineadas y sin márgenes extra */
+.imagen_tienda1, .imagen_tienda2, .imagen_tienda3, .imagen_tienda4, .imagen_tienda5, .imagen_tienda6 {
+    display: block; /* Asegura que las imágenes no tengan espacios debajo */
+    width: 100%; /* Ajusta el tamaño a su contenedor */
+    /*height: auto;  Mantiene la proporción de la imagen */
+    
+}
+
+.imagen_tienda1{
+    padding-right: 0;
+}
+
+
+/* Para las clases que tienen desplazamiento en su posición, ajustamos para evitar el efecto visual extraño */
+.imagen_tienda1, .imagen_tienda2, .imagen_tienda3, .imagen_tienda4, .imagen_tienda5, .imagen_tienda6 {
+    position: static; /* Elimina cualquier desplazamiento innecesario */
+    margin: 0 auto; /* Centra las imágenes si es necesario */
+    flex-wrap: wrap;
+}
+
+
+/* Estilos adicionales si quieres bordes o sombras */
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para las imágenes */
+  transition: transform 0.3s ease; /* Animación suave cuando la imagen se redimensiona */
+}
+
+img:hover {
+  transform: scale(1.05); /* Efecto de ampliación cuando se pasa el ratón por encima */
+}
+
+/* Fuerza que todas las imágenes tengan el mismo tamaño (puedes ajustar el tamaño según tus necesidades) */
+.img-fluid {
+  max-width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible en su contenedor */
+  height: auto;    /* Mantiene la proporción original de la imagen */
+}
+
+/* Si las imágenes están desajustadas en cuanto a proporción, puedes forzar una altura fija */
+.col img {
+  max-width: 100%; /* Se ajustan a la columna */
+  height: 200px;   /* Ajusta la altura para que todas las imágenes sean del mismo tamaño */
+  object-fit: cover; /* Mantiene la imagen proporcional, recortando si es necesario */
+}
+
+
+/* Si quieres que la imagen 5 tenga un tamaño específico, puedes agregar un selector para ella 
+
+.col img[src="https://m.media-amazon.com/images/I/61UhhuendiS._AC_SX679_.jpg"] {
+  height: 200px;                                                                       # Iguala la altura con las demás imágenes 
+  object-fit: cover;                                                                   #Mantiene la proporción recortando 
+}
+*/
